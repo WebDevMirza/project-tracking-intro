@@ -61,3 +61,20 @@ header {
     max-width: 1440px;
   }
 }
+
+/* ==============================
+   Preloader
+============================== */
+#preloader {
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  background-image: url("https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif");
+  background-repeat: no-repeat;
+  background-position: center center;
+  filter: invert(1);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+}
