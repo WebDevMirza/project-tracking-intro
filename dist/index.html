@@ -11,11 +11,18 @@
       rel="stylesheet"
     />
     <title>Project Sample</title>
-    <script type="module" crossorigin src="/project-tracking-intro/assets/index-7b08f11f.js"></script>
-    <link rel="stylesheet" href="/project-tracking-intro/assets/index-77657f66.css">
+    <script type="module" crossorigin src="/project-tracking-intro/assets/index-4851be94.js"></script>
+    <link rel="stylesheet" href="/project-tracking-intro/assets/index-830a4052.css">
   </head>
   <body>
+    <div id="preloader"></div>
     <div id="root"></div>
     
+    <script>
+      const preloader = document.getElementById("preloader");
+      window.addEventListener("load", () => {
+        preloader.style.display = "none";
+      });
+    </script>
   </body>
 </html>
