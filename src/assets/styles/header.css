@@ -1,0 +1,135 @@
+.nav-desktop,
+.nav-mobile-off {
+  display: none;
+}
+
+.header-wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  justify-items: start;
+  margin: 1.5rem 1.75rem 3rem;
+}
+
+[class*="toggle-"]::after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  top: 0px;
+  right: 0;
+  z-index: 9;
+}
+
+.overlay::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(167, 167, 167);
+  top: -50px;
+  left: -0px;
+  width: 100%;
+  height: 150vh;
+  z-index: 3;
+  opacity: 0.3;
+}
+
+.toggle-ham::after {
+  background-image: url(../images/icon-hamburger.svg);
+}
+
+.toggle-close::after {
+  background-image: url(../images/icon-close.svg);
+}
+
+.nav-mobile-on {
+  display: block;
+  position: absolute;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  top: 50px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 1.5rem 0;
+  z-index: 8;
+}
+
+nav a {
+  color: var(--VeryDarkBlue);
+}
+
+nav .login a {
+  color: var(--GrayishBlue);
+}
+
+.nav-mobile-on a:hover,
+.nav-mobile-on a:focus-visible {
+  color: var(--Red);
+}
+
+.blank {
+  width: 100%;
+  height: 1px;
+  background-color: var(--GrayishBlue);
+  opacity: 0.4;
+  border-radius: 100vmax;
+  margin-bottom: 0.5rem;
+}
+
+[class*="nav-mobile-"] ul {
+  display: grid;
+  grid-auto-flow: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .nav-desktop {
+    display: block;
+  }
+
+  .nav-mobile-on,
+  .nav-mobile-off,
+  .toggle-ham,
+  .toggle-close {
+    display: none;
+  }
+
+  .header-wrapper {
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem 0 3rem;
+  }
+
+  .logo {
+    max-width: 350px;
+    width: 88%;
+    margin-inline: auto;
+  }
+
+  nav {
+    margin-left: auto;
+    margin-right: 5rem;
+  }
+
+  nav a:hover,
+  nav a:focus-visible {
+    text-decoration: underline;
+    text-underline-offset: 0.125rem;
+  }
+
+  .blank {
+    width: 7px;
+    height: 7px;
+    background-color: var(--GrayishBlue);
+    border-radius: 100vmax;
+  }
+
+  .nav-desktop ul {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 3.5rem;
+  }
+}

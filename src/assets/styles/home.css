@@ -1,0 +1,63 @@
+:root {
+  /*  ===============================
+      Colors
+      ===============================   */
+  --Red: hsl(0, 100%, 68%);
+  --VeryDarkBlue: hsl(230, 29%, 20%);
+  --DarkGrayishBlue: hsl(230, 11%, 40%);
+  --GrayishBlue: hsl(231, 7%, 65%);
+  --LightGrayishBlue: hsl(207, 33%, 95%);
+
+  /* ===============================
+     Fonts
+     ===============================  */
+
+  --ff-primary: "Barlow", sans-serif;
+  --ff-secondary: "Barlow Condensed", sans-serif;
+  --fs-fontsize: 1.125rem; /* 18px */
+  --fw-400: 400;
+  --fw-700: 700;
+}
+
+/* ==============================
+   Body
+   ==============================  */
+
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-fontsize);
+  font-weight: var(--fw-400);
+  color: var(--DarkGrayishBlue);
+}
+
+/* ==============================
+Typography
+============================== */
+h1,
+.btn,
+nav {
+  font-family: var(--ff-secondary);
+  font-weight: 700;
+}
+
+h1 {
+  color: var(--VeryDarkBlue);
+  line-height: 1;
+}
+
+/* ==============================
+Layout
+============================== */
+main,
+header {
+  max-width: 575px;
+  margin-inline: auto;
+  /* margin: 1.5rem auto; */
+}
+
+@media (min-width: 1024px) {
+  main,
+  header {
+    max-width: 1440px;
+  }
+}
