@@ -8,7 +8,6 @@ This is a solution to the [Project tracking intro component challenge on Fronten
 - [Author](#author)
 - [Date](#date)
 
-## Performance Test
 
 ![](./per.jpg)
 
